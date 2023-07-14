@@ -11,6 +11,8 @@ label {
 
 header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 24px;
 }
 
 /* typography */
@@ -54,7 +56,28 @@ table {
   text-overflow: ellipsis;
 }
 
-/* Column Size for thead */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-/* Column size for tbody */
+.form-row label {
+  flex: 1;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 2;
+}
+
+.form-row button {
+  flex: 1;
+}

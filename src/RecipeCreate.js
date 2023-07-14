@@ -42,82 +42,53 @@ function RecipeCreate({ onRecipeCreate }) {
   // onChange event handler is used whenever the user changes content in the textarea, updates the recipe state with new value entered by user
   return (
     <form name="create" onSubmit={handleSubmit}>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <label htmlFor="name">Name:</label>
-            </td>
-            <td>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={recipe.name}
-                onChange={handleChange}
-                />
-            </td>
-            </tr>
-            <tr>
-              <td>
-                <label htmlFor="cuisine">Cusine:</label>
-              </td>
-              <td>
-                <input 
-                  type="text"
-                  id="cuisine"
-                  name="cuisine"
-                  value={recipe.cuisine}
-                  onChange={handleChange}
-                  />
-              </td>
-              </tr>
-              <tr>
-                <td>
-                  <label htmlFor="photo">Photo:</label>
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    id="photo"
-                    name="photo"
-                    value={recipe.photo}
-                    onChange={handleChange}
-                    />
-                </td>
-                </tr>
-                <tr>
-                <td>
-                  <label htmlFor="ingredients">Ingredients:</label>
-                </td>
-                <td>
-                  <textarea
-                    id="ingredients"
-                    name="ingredients"
-                    value={recipe.ingredients}
-                    onChange={handleChange}
-                    ></textarea>
-                </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label htmlFor="preparation">Preparation:</label>
-                  </td>
-                  <td>
-                    <textarea
-                      id="preparation"
-                      name="preparation"
-                      value={recipe.preparation}
-                      onChange={handleChange}
-                      ></textarea>
-                  </td>
-            <td>
-              <button type="submit">Create</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
+    <div className="form-row">
+      <label htmlFor="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        value={recipe.name}
+        onChange={handleChange}
+      />
+  
+      <label htmlFor="cuisine">Cusine:</label>
+      <input 
+        type="text"
+        id="cuisine"
+        name="cuisine"
+        value={recipe.cuisine}
+        onChange={handleChange}
+      />
+  
+      <label htmlFor="photo">Photo:</label>
+      <input
+        type="text"
+        id="photo"
+        name="photo"
+        value={recipe.photo}
+        onChange={handleChange}
+      />
+  
+      <label htmlFor="ingredients">Ingredients:</label>
+      <textarea
+        id="ingredients"
+        name="ingredients"
+        value={recipe.ingredients}
+        onChange={handleChange}
+      ></textarea>
+  
+      <label htmlFor="preparation">Preparation:</label>
+      <textarea
+        id="preparation"
+        name="preparation"
+        value={recipe.preparation}
+        onChange={handleChange}
+      ></textarea>
+  
+      <button type="submit">Create</button>
+    </div>
+  </form>  
   );
 }
 
