@@ -10,7 +10,7 @@ function RecipeList({ recipes, onDeleteRecipe }) {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Cusine</th>
+            <th>Cuisine</th>
             <th>Photo</th>
             <th>Ingredients</th>
             <th>Preparation</th>

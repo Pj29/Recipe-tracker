@@ -53,7 +53,7 @@ function RecipeCreate({ onRecipeCreate }) {
         onChange={handleChange}
       />
   
-      <label htmlFor="cuisine">Cusine:</label>
+      <label htmlFor="cuisine">Cuisine:</label>
       <input 
         type="text"
         id="cuisine"
