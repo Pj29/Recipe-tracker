@@ -36,10 +36,11 @@ function RecipeCreate({ onRecipeCreate }) {
       preparation: "",
     });
   };
-  // attach onSubmit event listener to the handleSubmit fn 
-  // individual form inputs within the form are defined, using handleChange as the event handler for the inputs to update the corresponding property of the recipe state
-  // the textarea elements are associated with specific properties in the recipe state so that the textarea displays the current value
-  // onChange event handler is used whenever the user changes content in the textarea, updates the recipe state with new value entered by user
+    // return a JSX form with the input fields for a recipe
+    // define form name, onSubmit attribute used to define callbackfn that handles form submissions
+    // div container used for all of the form fields and is used for CSS 
+    // define labels and input, using onChange to update the state
+    // value attribute is bound to the corresponding prop  
   return (
     <form name="create" onSubmit={handleSubmit}>
     <div className="form-row">
