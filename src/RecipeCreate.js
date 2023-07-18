@@ -58,7 +58,7 @@ function RecipeCreate({ onRecipeCreate }) {
           type="text"
           id="cuisine"
           name="cuisine"
-          placeholder="Cusine"
+          placeholder="Cuisine"
           value={recipe.cuisine}
           onChange={handleChange}
         />
@@ -67,7 +67,7 @@ function RecipeCreate({ onRecipeCreate }) {
           type="text"
           id="photo"
           name="photo"
-          placeholder="Photo URL" 
+          placeholder="URL" 
           value={recipe.photo}
           onChange={handleChange}
         />
