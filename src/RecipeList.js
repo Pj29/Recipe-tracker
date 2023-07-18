@@ -1,11 +1,9 @@
 import React from "react";
 // destructure recipes and onDeleteRecipe props
 function RecipeList({ recipes, onDeleteRecipe }) {
-  // create table structure with table, thead, tr, th
-  // use recipes.map to map over recipes arr, iterating through each recipe and generating a table row for each recipe
-  // using the map method, the RecipeList component dynamically renders the table rows based on the number of recipes in the recipes array, ensuring that the table is updated when the data changes
   return (
     <div className="recipe-list">
+      {/*create table structure with table, thead, tr, th*/}
       <table>
         <thead>
           <tr>
@@ -18,6 +16,8 @@ function RecipeList({ recipes, onDeleteRecipe }) {
           </tr>
         </thead>
         <tbody>
+          {/*use recipes.map to map over recipes arr, iterating through each recipe and generating a table row for each recipe*/}
+          {/*using the map method, the RecipeList component dynamically renders the table rows based on the number of recipes in the recipes array, ensuring that the table is updated when the data changes*/}
         {recipes.map((recipe, index) => (
           <tr key={index}>
             <td>{recipe.name}</td>

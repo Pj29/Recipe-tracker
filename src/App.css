@@ -11,14 +11,18 @@ label {
 
 header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  font-size: 24px;
+  text-align: center; /* Center the header text */
+}
+
+h1 {
+  font-family: 'Playfair Display SC', serif; 
+  font-size: 64px;
 }
 
 /* typography */
 
 html {
-  font-family: 'helvetica neue', sans-serif;
+  font-family: 'Open Sans', sans-serif; 
 }
 
 thead th, tfoot th {
@@ -56,9 +60,35 @@ table {
   text-overflow: ellipsis;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+/* Column Size for thead and tbody */
+thead th:nth-child(1),
+thead th:nth-child(2),
+thead th:nth-child(3),
+tbody td:nth-child(1),
+tbody td:nth-child(2),
+tbody td:nth-child(3) {
+  width: 10%;
+}
+
+thead th:nth-child(4),
+thead th:nth-child(5),
+tbody td:nth-child(4),
+tbody td:nth-child(5) {
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff0c7;
+}
+
+td img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down; 
+}
+
+td {
+  overflow: auto;
 }
 
 .form-row {
